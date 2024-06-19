@@ -1,0 +1,10 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50%;
+    gap: 20px;
+}
+
+.slideIn{
+    animation: 3s infinite alternate slidein;
+}

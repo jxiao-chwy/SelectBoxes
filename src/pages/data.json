@@ -1,0 +1,296 @@
+{
+    "OTHER": {
+        "reason": "OTHER"
+    },
+    "VETERINARIAN_APPOINTMENT_NOT_COMPLETED": {
+        "reason": "VETERINARIAN_APPOINTMENT_NOT_COMPLETED",
+        "children": {
+            "COMPASSION": {
+                "reason": "COMPASSION",
+                "children": {
+                    "EMERGENCY_ROOM": {
+                        "reason": "EMERGENCY_ROOM"
+                    },
+                    "COMPASSION_OTHER": {
+                        "reason": "COMPASSION_OTHER"
+                    }
+                }
+            },
+            "NOT_COVERED": {
+                "reason": "NOT_COVERED",
+                "children": {
+                    "DIAGNOSIS_WANTED": {
+                        "reason": "DIAGNOSIS_WANTED"
+                    },
+                    "CS_TRANSFER": {
+                        "reason": "CS_TRANSFER"
+                    },
+                    "SPECIES": {
+                        "reason": "SPECIES"
+                    },
+                    "RX_WANTED": {
+                        "reason": "RX_WANTED"
+                    }
+                }
+            },
+            "TECHNICAL_ISSUE": {
+                "reason": "TECHNICAL_ISSUE",
+                "children": {
+                    "VIDEO_USED_CHAT": {
+                        "reason": "VIDEO_USED_CHAT"
+                    },
+                    "VIDEO_USED_AUDIO": {
+                        "reason": "VIDEO_USED_AUDIO"
+                    },
+                    "TECHNICAL_OTHER": {
+                        "reason": "TECHNICAL_OTHER"
+                    }
+                }
+            }
+        }
+    },
+    "PRODUCT_DEFECTS": {
+        "reason": "PRODUCT_DEFECTS",
+        "children": {
+            "INFESTED": {
+                "reason": "INFESTED"
+            },
+            "RECALL": {
+                "reason": "RECALL"
+            },
+            "PAST_EXPIRATION": {
+                "reason": "PAST_EXPIRATION"
+            },
+            "DEFECTIVE": {
+                "reason": "DEFECTIVE",
+                "children": {
+                    "MISSING_PARTS": {
+                        "reason": "MISSING_PARTS"
+                    },
+                    "INJURY_OR_ILLNESS": {
+                        "reason": "INJURY_OR_ILLNESS"
+                    },
+                    "COLOR_TEXTURE_OR_ODOR_DISCREPANCIES": {
+                        "reason": "COLOR_TEXTURE_OR_ODOR_DISCREPANCIES"
+                    },
+                    "FOREIGN_MATERIAL": {
+                        "reason": "FOREIGN_MATERIAL"
+                    },
+                    "DOES_NOT_FUNCTION_AS_INTENDED": {
+                        "reason": "DOES_NOT_FUNCTION_AS_INTENDED"
+                    },
+                    "MOLD": {
+                        "reason": "MOLD"
+                    }
+                }
+            }
+        }
+    },
+    "FULFILLMENT": {
+        "reason": "FULFILLMENT",
+        "children": {
+            "FLOOR_DENIAL": {
+                "reason": "FLOOR_DENIAL"
+            },
+            "SHIPPED_WRONG_ITEM": {
+                "reason": "SHIPPED_WRONG_ITEM",
+                "children": {
+                    "FULFILLMENT_WRONG_FORMULA": {
+                        "reason": "FULFILLMENT_WRONG_FORMULA"
+                    },
+                    "FULFILLMENT_WRONG_QUANTITY": {
+                        "reason": "FULFILLMENT_WRONG_QUANTITY"
+                    },
+                    "FULFILLMENT_WRONG_COLOR": {
+                        "reason": "FULFILLMENT_WRONG_COLOR"
+                    },
+                    "FULFILLMENT_WRONG_PRODUCT": {
+                        "reason": "FULFILLMENT_WRONG_PRODUCT"
+                    },
+                    "FULFILLMENT_WRONG_SIZE": {
+                        "reason": "FULFILLMENT_WRONG_SIZE"
+                    }
+                }
+            },
+            "ITEM_MISSING_FROM_SHIPMENT": {
+                "reason": "ITEM_MISSING_FROM_SHIPMENT"
+            }
+        }
+    },
+    "UNAUTHORIZED_PURCHASE": {
+        "reason": "UNAUTHORIZED_PURCHASE"
+    },
+    "DOES_NOT_WANT": {
+        "reason": "DOES_NOT_WANT",
+        "children": {
+            "ORDERED_WRONG_ITEM": {
+                "reason": "ORDERED_WRONG_ITEM",
+                "children": {
+                    "ORDERED_WRONG_SIZE": {
+                        "reason": "ORDERED_WRONG_SIZE"
+                    },
+                    "ORDERED_WRONG_COLOR": {
+                        "reason": "ORDERED_WRONG_COLOR"
+                    },
+                    "ORDERED_WRONG_FORMULA": {
+                        "reason": "ORDERED_WRONG_FORMULA"
+                    },
+                    "ORDERED_WRONG_PRODUCT": {
+                        "reason": "ORDERED_WRONG_PRODUCT"
+                    },
+                    "ORDERED_WRONG_QUANTITY": {
+                        "reason": "ORDERED_WRONG_QUANTITY"
+                    }
+                }
+            },
+            "ITEM_NOT_AS_DESCRIBED": {
+                "reason": "ITEM_NOT_AS_DESCRIBED",
+                "children": {
+                    "WRONG_IMAGE": {
+                        "reason": "WRONG_IMAGE"
+                    },
+                    "WRONG_DESCRIPTION": {
+                        "reason": "WRONG_DESCRIPTION"
+                    },
+                    "WRONG_DIMENSIONS": {
+                        "reason": "WRONG_DIMENSIONS"
+                    }
+                }
+            },
+            "CUSTOMER_OR_PET_PREFERENCE": {
+                "reason": "CUSTOMER_OR_PET_PREFERENCE",
+                "children": {
+                    "MADE_PET_SICK": {
+                        "reason": "MADE_PET_SICK"
+                    },
+                    "PET_DESTROYED_ITEM": {
+                        "reason": "PET_DESTROYED_ITEM"
+                    },
+                    "PET_DIET_CHANGED": {
+                        "reason": "PET_DIET_CHANGED"
+                    },
+                    "PET_PASSED": {
+                        "reason": "PET_PASSED"
+                    },
+                    "PET_OR_CUSTOMER_DOESNT_LIKE": {
+                        "reason": "PET_OR_CUSTOMER_DOESNT_LIKE"
+                    },
+                    "UNSATISFIED_WITH_QUALITY": {
+                        "reason": "UNSATISFIED_WITH_QUALITY"
+                    },
+                    "FOUND_BETTER_PRICE": {
+                        "reason": "FOUND_BETTER_PRICE"
+                    }
+                }
+            }
+        }
+    },
+    "AUTOSHIP_SCHEDULING_MISTAKE": {
+        "reason": "AUTOSHIP_SCHEDULING_MISTAKE",
+        "children": {
+            "WRONG_NFD_OR_FREQUENCY": {
+                "reason": "WRONG_NFD_OR_FREQUENCY"
+            },
+            "UNAWARE_RECURRING_ORDER": {
+                "reason": "UNAWARE_RECURRING_ORDER"
+            },
+            "TOO_MUCH_PRODUCT": {
+                "reason": "TOO_MUCH_PRODUCT"
+            }
+        }
+    },
+    "DAMAGED": {
+        "reason": "DAMAGED",
+        "children": {
+            "BOX_AND_PRODUCT": {
+                "reason": "BOX_AND_PRODUCT",
+                "children": {
+                    "MELTED_OR_THAWED_PRODUCT": {
+                        "reason": "MELTED_OR_THAWED_PRODUCT"
+                    },
+                    "TAPE_ISSUE": {
+                        "reason": "TAPE_ISSUE"
+                    },
+                    "SPILLED_OR_LEAKING_BOX_OR_PRODUCT": {
+                        "reason": "SPILLED_OR_LEAKING_BOX_OR_PRODUCT"
+                    },
+                    "RIPPED_OR_TORN_BOX_OR_PRODUCT": {
+                        "reason": "RIPPED_OR_TORN_BOX_OR_PRODUCT"
+                    },
+                    "MELTED_OR_THAWED_BOX_OR_PRODUCT": {
+                        "reason": "MELTED_OR_THAWED_BOX_OR_PRODUCT"
+                    },
+                    "BROKEN_OR_SMASHED_BOX_OR_PRODUCT": {
+                        "reason": "BROKEN_OR_SMASHED_BOX_OR_PRODUCT"
+                    },
+                    "DENTED_BOX_OR_PRODUCT": {
+                        "reason": "DENTED_BOX_OR_PRODUCT"
+                    },
+                    "NON_SPECIFIC_DAMAGE": {
+                        "reason": "NON_SPECIFIC_DAMAGE"
+                    },
+                    "CARRIER_REPORTED_DAMAGE": {
+                        "reason": "CARRIER_REPORTED_DAMAGE"
+                    },
+                    "WEATHER_BOX_OR_PRODUCT": {
+                        "reason": "WEATHER_BOX_OR_PRODUCT"
+                    }
+                }
+            },
+            "PRODUCT_ONLY": {
+                "reason": "PRODUCT_ONLY",
+                "children": {
+                    "DENTED_PRODUCT": {
+                        "reason": "DENTED_PRODUCT"
+                    },
+                    "SPILLED_OR_LEAKING_PRODUCT": {
+                        "reason": "SPILLED_OR_LEAKING_PRODUCT"
+                    },
+                    "BROKEN_OR_SMASHED_PRODUCT": {
+                        "reason": "BROKEN_OR_SMASHED_PRODUCT"
+                    },
+                    "RIPPED_OR_TORN_PRODUCT": {
+                        "reason": "RIPPED_OR_TORN_PRODUCT"
+                    },
+                    "WEATHER_PRODUCT": {
+                        "reason": "WEATHER_PRODUCT"
+                    }
+                }
+            }
+        }
+    },
+    "SHIPPING_ISSUES": {
+        "reason": "SHIPPING_ISSUES",
+        "children": {
+            "SHIPPED_TO_WRONG_ADDRESS": {
+                "reason": "SHIPPED_TO_WRONG_ADDRESS"
+            },
+            "LATE_ARRIVAL": {
+                "reason": "LATE_ARRIVAL"
+            },
+            "TRACKING_STATES_DELIVERED": {
+                "reason": "TRACKING_STATES_DELIVERED"
+            },
+            "LOST_BY_SHIPPER": {
+                "reason": "LOST_BY_SHIPPER"
+            },
+            "UNDELIVERABLE": {
+                "reason": "UNDELIVERABLE",
+                "children": {
+                    "FAILED_DELIVERY_ATTEMPTS": {
+                        "reason": "FAILED_DELIVERY_ATTEMPTS"
+                    },
+                    "INSUFFICIENT_ADDRESS": {
+                        "reason": "INSUFFICIENT_ADDRESS"
+                    },
+                    "UNKNOWN": {
+                        "reason": "UNKNOWN"
+                    },
+                    "REFUSED": {
+                        "reason": "REFUSED"
+                    }
+                }
+            }
+        }
+    }
+}
