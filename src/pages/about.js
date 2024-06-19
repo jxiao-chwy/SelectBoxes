@@ -29,12 +29,7 @@ function dataToOptions(data) {
   });
 }
 export default function About () {
-  const [state, setState] = useState(
-    {
-      selection: undefined,
-      rest: undefined
-    }
-  )
+  const [state, setState] = useState([])
   const [parsedState, setParsedState] = useState("")
   const data = {
     "UNAUTHORIZED_PURCHASE": {},
@@ -200,24 +195,33 @@ export default function About () {
   const options = dataToOptions(data)
   const handleSelectChange = (state) => {
     setState(state)
-    setParsedState(parseState(state, []).join(', '))
+    //setParsedState(parseState(state, []).join(', '))
   }
+  const [optionState, setOptionState] = useState(dataToOptions({
+    "AUTOSHIP_SCHEDULING_MISTAKE": {
+        "children": {
+            "TOO_MUCH_PRODUCT": {},
+            //"UNAWARE_RECURRING_ORDER": {},
+            //"WRONG_NFD_OR_FREQUENCY": {}
+        }
+    }
+  }));
   return (
     <>
     <div className={styles.gridContainer}>
           <SelectBoxes
             index = {1}
             onChange = {handleSelectChange}
-            options = {options}
+            options = {optionState}
             state = {state}
           />
     </div>
+    <button onClick={() => setOptionState(options)}>Change the options</button>
     <p>
-          Selected State: <strong>{JSON.stringify({state})}</strong>
+          Selected State: <strong>{JSON.stringify(state)}</strong>
           </p>
-          <p>
-          Selected Reason: <strong>{parsedState}</strong>
-          </p>
+
+          
     </>
 
   )
